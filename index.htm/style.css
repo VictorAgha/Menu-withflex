@@ -8,12 +8,14 @@ body{
 header{
    position: relative;
    margin-bottom: 10rem;
+   display: flex;
+   justify-content: center;
 }
 
 header::after {
     content: "";
     position: absolute;
-    bottom: -250%;
+    bottom: -60%;
     left: 0;
     width: 100%;
     height: 1%;
@@ -33,28 +35,35 @@ ul {
 }
 
 li {
-    display: inline-block;
-    margin-right: 80px; 
+    display: flex;
+    justify-content: center; 
+    justify-direction: row;
+
 }
 
 .logo{
     width: 20%;
     padding-top: 2%;
     vertical-align: top;
+    background-color: white;
 }
 
 .navigation {
 	align-items:first baseline;
-	height: 3em;
+	height: 6em;
     text-align: left;
+    background-color: black;
   
 }
 .nav {
-    display: inline-block;
+    display:flex;
     text-decoration: none;
     color: #000000;
     font-weight: bold;
     font-size: 100%;
+    justify-content: center;
+    flex-direction: row;
+    background-color: darkred;
 }
 
 .nav:hover {
@@ -81,6 +90,9 @@ table {
   th {
     text-align: left;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   }
   
